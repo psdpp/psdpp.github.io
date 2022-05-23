@@ -1,4 +1,4 @@
 # poterba.github.io
 
-- [RLE](./RLE/)
+- [RLE](./RLE)
 
