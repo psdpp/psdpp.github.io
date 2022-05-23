@@ -3,7 +3,7 @@
         Type your custom hex data separated by spaces and press 'enter' to see bew result:
     </p>
 
-    <input type="text" id="input" value="FE AA 02 80 00 2A FD AA 03 80 00 2A 22 F7 AA"><br>
+    <input type="text" id="input" value="FE05FE04 FB050004 FC03" style="width:100%;"><br>
     <pre id="datalength"></pre>
     <pre id="result"></pre>
 
