@@ -11,7 +11,7 @@ function str2hex(str) {
 
 function hex2str(hex) {
     var spacelessStr = hex.split(' ').join('');
-    return spacelessStr.split('').map(function (string) {
+    return spacelessStr.match(/.{2}/g).map(function (string) {
         return String.fromCharCode(parseInt(string, 16));
     }).join('');
 }
