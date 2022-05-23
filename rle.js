@@ -1,4 +1,5 @@
 var input = document.getElementById('input'),
+    datalength = document.getElementById('datalength'),
     result = document.getElementById('result');
 
 function str2hex(str) {
@@ -52,7 +53,9 @@ function packBits(data) {
 }
 
 function compile() {
-    result.innerHTML = str2hex(packBits(hex2str(input.value)));
+    var decodedData = packBits(hex2str(input.value));
+    result.innerHTML = str2hex(decodedData);
+    datalength.innerHTML = "Resulting size: " + decodedData.length();
 }
 
 compile();
