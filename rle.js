@@ -54,8 +54,8 @@ function packBits(data) {
 
 function compile() {
     var decodedData = packBits(hex2str(input.value));
+    datalength.innerHTML = "Resulting size: " + decodedData.length;
     result.innerHTML = str2hex(decodedData);
-    datalength.innerHTML = "Resulting size: " + decodedData.length();
 }
 
 compile();
